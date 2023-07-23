@@ -1,0 +1,30 @@
+.app-header {
+  width: 100%;
+  position: fixed;
+  z-index: 1000;
+  background: #1D1B20;
+
+  .spacer {
+    flex: 1 1 auto;
+  }
+
+  .mat-toolbar {
+    display: flex;
+    justify-content: space-between;
+
+    background: #1D1B20;
+    color: #FFF;
+
+    margin: 0 auto;
+    max-width: 1048px;
+    width: 90%;
+
+    .mat-mdc-outlined-button:not(:disabled) {
+      border-color: #FFF;
+    }
+
+    button {
+      margin: 0 8px;
+    }
+  }
+}
