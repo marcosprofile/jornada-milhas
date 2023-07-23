@@ -1,0 +1,79 @@
+<section class="modal">
+  <h1 mat-dialog-title>Viajante</h1>
+  <div mat-dialog-content>
+    <div class="selecao-idade">
+      <ul>
+        <li>
+          <span class="first">Adultos</span>
+        </li>
+        <li>(Acima de 12 anos)</li>
+        <li class="fab-actions">
+          <button class="decremento" mat-mini-fab>
+            <img
+              src="assets/icones/do_not_disturb_on.png"
+              alt="Operador de subtração">
+          </button>
+          <span>1</span>
+          <button class="incremento" mat-mini-fab>
+            <img
+              src="assets/icones/add_circle.png"
+              alt="Operador de subtração">
+          </button>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span class="first">
+            Crianças
+          </span>
+        </li>
+        <li>(Entre 2 e 11 anos)</li>
+        <li class="fab-actions">
+          <button class="decremento" mat-mini-fab>
+            <img
+              src="assets/icones/do_not_disturb_on.png"
+              alt="Operador de subtração">
+          </button>
+          <span>1</span>
+          <button class="incremento" mat-mini-fab>
+            <img
+              src="assets/icones/add_circle.png"
+              alt="Operador de subtração">
+          </button>
+        </li>
+      </ul>
+      <ul>
+        <li>
+          <span class="first">
+            Bebês
+          </span>
+        </li>
+        <li>(Até 2 anos)</li>
+        <li class="fab-actions">
+          <button class="decremento" mat-mini-fab>
+            <img
+              src="assets/icones/do_not_disturb_on.png"
+              alt="Operador de subtração">
+          </button>
+          <span>1</span>
+          <button class="incremento" mat-mini-fab>
+            <img
+              src="assets/icones/add_circle.png"
+              alt="Operador de subtração">
+          </button>
+        </li>
+      </ul>
+    </div>
+    <div class="selecao-categoria">
+      <h2>Categoria</h2>
+      <mat-chip-listbox aria-label="Fish selection">
+        <mat-chip-option selected>Econômica</mat-chip-option>
+        <mat-chip-option disabled>Executiva</mat-chip-option>
+      </mat-chip-listbox>
+    </div>
+  </div>
+  <div mat-dialog-actions class="modal-actions">
+    <button mat-button mat-dialog-close class="cancelar">Cancelar</button>
+    <button mat-flat-button mat-dialog-close color="primary">Aplicar</button>
+  </div>
+</section>
