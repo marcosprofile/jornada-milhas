@@ -4,7 +4,7 @@
     <nav class="mobile">
       <mat-icon class="menu-mobile" (click)="toggleNavbar()">{{ iconStatus }}</mat-icon>
     </nav>
-    <nav class="navbar display-flex" [class.display-flex]="isNavbarVisible">
+    <nav class="navbar" [class.display-flex]="isNavbarVisible" #navbarElement>
       <button mat-button>Vender milhas</button>
       <button mat-button>Sobre</button>
       <button mat-raised-button color="primary">Cadastre-se</button>
