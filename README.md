@@ -7,8 +7,6 @@
 
 <br>
 
-### Features
-
 - [x] Layout responsivo Desktop
 - [x] Layout responsivo iPad/Tablet
 - [x] Layout responsivo Mobile
@@ -27,8 +25,6 @@
 
 ![image](https://github.com/marcosprofile/jornada-milhas/assets/86635292/b04539cc-7dae-4605-a1ba-bcf714166aae)
 
-<br>
-<br>
 <br>
 
 ### Pré-requisitos
@@ -57,7 +53,5 @@ $ ng s
 
 # O servidor inciará na porta:4200 - acesse <http://localhost:4200>
 ```
-
-<br>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
