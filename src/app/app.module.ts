@@ -25,6 +25,7 @@ import { MatDatepickerModule } from '@angular/material/datepicker';
 import { MatNativeDateModule } from '@angular/material/core';
 import { ModalComponent } from './shared/modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
+import { ModalHeaderComponent } from './shared/modal-header/modal-header.component';
 
 
 @NgModule({
@@ -39,7 +40,8 @@ import { MatDialogModule } from '@angular/material/dialog';
     CardBuscaComponent,
     CardDepoimentosComponent,
     FormBuscaComponent,
-    ModalComponent
+    ModalComponent,
+    ModalHeaderComponent
   ],
   imports: [
     BrowserModule,

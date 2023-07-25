@@ -1,45 +1,18 @@
-import { Component, HostListener, OnInit, ViewChild, ElementRef } from '@angular/core';
+import { Component } from '@angular/core';
+import { MatDialog } from '@angular/material/dialog';
+import { ModalHeaderComponent } from '../modal-header/modal-header.component';
 
 @Component({
   selector: 'app-header',
   templateUrl: './header.component.html',
   styleUrls: ['./header.component.scss']
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent {
+  constructor(public dialog: MatDialog) {}
 
-  isNavbarVisible = false;
-  iconStatus = 'menu';
-  isPageLoaded = false;
-  screenWidth: number = window.innerWidth;
-
-  @ViewChild('navbarElement', { static: true }) navbarElement!: ElementRef;
-
-  ngOnInit() {
-    this.isPageLoaded = true;
-    this.updateNavbarVisibility();
-  }
-
-  @HostListener('window:resize', ['$event'])
-  onResize(event: any) {
-    this.screenWidth = event.target.innerWidth;
-    this.updateNavbarVisibility();
-  }
-
-  updateNavbarVisibility() {
-    if (this.isPageLoaded) {
-      this.isNavbarVisible = this.screenWidth <= 600;
-      const navbarEl = this.navbarElement.nativeElement as HTMLElement;
-      navbarEl.style.height = this.isNavbarVisible ? '274px' : '76px';
-      navbarEl.style.display = this.isNavbarVisible ? 'flex' : 'none';
-    }
-  }
-
-  toggleNavbar() {
-    this.isNavbarVisible = !this.isNavbarVisible;
-    this.iconStatus = this.isNavbarVisible ? 'close' : 'menu';
-
-    const navbarEl = this.navbarElement.nativeElement as HTMLElement;
-    navbarEl.style.display = this.isNavbarVisible ? 'flex' : 'none';
-    navbarEl.style.height = this.isNavbarVisible ? '274px' : '76px';
+  openDialog() {
+    this.dialog.open(ModalHeaderComponent, {
+      width: '100%'
+    });
   }
 }

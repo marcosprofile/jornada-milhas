@@ -1,10 +1,10 @@
 <header class="app-header">
-  <mat-toolbar [style.height]="isNavbarVisible ? '264px' : '76px'">
+  <mat-toolbar>
     <img src="assets/imagens/logo.png" alt="Logo da aplicação Jornada milhas">
     <nav class="mobile">
-      <mat-icon class="menu-mobile" (click)="toggleNavbar()">{{ iconStatus }}</mat-icon>
+      <mat-icon class="menu-mobile" (click)="openDialog()">menu</mat-icon>
     </nav>
-    <nav class="navbar" [class.display-flex]="isNavbarVisible" #navbarElement>
+    <nav class="navbar">
       <button mat-button>Vender milhas</button>
       <button mat-button>Sobre</button>
       <button mat-raised-button color="primary">Cadastre-se</button>
