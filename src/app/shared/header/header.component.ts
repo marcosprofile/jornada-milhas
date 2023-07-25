@@ -9,11 +9,13 @@ export class HeaderComponent implements OnInit {
 
   isNavbarVisible = false;
   iconStatus = 'menu';
+  isPageLoaded = false;
   screenWidth: number = window.innerWidth;
 
   @ViewChild('navbarElement', { static: true }) navbarElement!: ElementRef;
 
   ngOnInit() {
+    this.isPageLoaded = true;
     this.updateNavbarVisibility();
   }
 
@@ -24,10 +26,12 @@ export class HeaderComponent implements OnInit {
   }
 
   updateNavbarVisibility() {
-    this.isNavbarVisible = this.screenWidth <= 600;
-    const navbarEl = this.navbarElement.nativeElement as HTMLElement;
-    navbarEl.style.height = this.isNavbarVisible ? '274px' : '76px';
-    navbarEl.style.display = this.isNavbarVisible ? 'flex' : 'none';
+    if (this.isPageLoaded) {
+      this.isNavbarVisible = this.screenWidth <= 600;
+      const navbarEl = this.navbarElement.nativeElement as HTMLElement;
+      navbarEl.style.height = this.isNavbarVisible ? '274px' : '76px';
+      navbarEl.style.display = this.isNavbarVisible ? 'flex' : 'none';
+    }
   }
 
   toggleNavbar() {
