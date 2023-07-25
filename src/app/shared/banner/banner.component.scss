@@ -5,3 +5,9 @@ figure {
     max-width: 100%;
   }
 }
+
+@media (max-width: 768px) {
+  figure {
+    padding-top: 136px;
+  }
+}

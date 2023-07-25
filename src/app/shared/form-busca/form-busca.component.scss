@@ -1,20 +1,76 @@
 .form-busca {
   margin: 40px 0;
   display: block;
+
+  .unset-margin-bottom {
+    margin-bottom: -16px !important;
+  }
+
+  h2 {
+    font-size: 32px;
+    margin-bottom: 20px;
+  }
+
   .flex-container {
     display: flex;
     align-items: center;
     gap: 12px;
     margin: 16px 0;
+
+    .mat-button-toggle-checked {
+      background-color: #F7F2FA;
+    }
+
+    .input-container {
+      margin-bottom: -1.25em;
+    }
+
+    .datas {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin: 16px 0;
+
+      .input-container {
+        width: 160px;
+      }
+    }
   }
-  .input-container {
-    margin-bottom: -1.25em;
-  }
-  .mat-button-toggle-checked {
-    background-color: #F7F2FA;
-  }
+}
+
+@media (max-width: 950px) {
   h2 {
-    font-size: 32px;
-    margin-bottom: 20px;
+    text-align: center;
+    margin-bottom: 40px !important;
+  }
+
+  .flex-container {
+    flex-direction: column;
+
+    .input-container {
+      width: 100%;
+    }
+
+    button {
+      width: 100%;
+    }
+
+    .button-sync {
+      width: max-content;
+    }
+
+    .datas {
+      width: 100%;
+
+      .input-container {
+        width: 100% !important;
+      }
+    }
+  }
+}
+
+@media (max-width: 400px) {
+  .datas {
+    flex-direction: column;
   }
 }

@@ -42,3 +42,15 @@ footer {
     }
   }
 }
+
+@media (max-width: 768px) {
+  .footer-container {
+    flex-direction: column;
+    gap: 64px;
+    padding: 32px 0 !important;
+
+    .footer-left {
+      align-items: center;
+    }
+  }
+}

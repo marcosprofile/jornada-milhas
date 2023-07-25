@@ -9,3 +9,25 @@ h2 {
   gap: 16px;
   margin-bottom: 40px;
 }
+
+@media (max-width: 1110px) {
+  h2 {
+    text-align: center;
+  }
+  
+  .card-wrapper {
+    grid-template-columns: 1fr 1fr;
+  }
+}
+
+@media (max-width: 988px) {
+  h2 {
+    text-align: center;
+  }
+}
+
+@media (max-width: 728px) {
+  .card-wrapper {
+    grid-template-columns: 1fr;
+  }
+}
