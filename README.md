@@ -1,4 +1,30 @@
-# JornadaMilhas
+# Jornada Milhas
+> Projeto realizado através do curso Angular: componentização e design com Angular Material
+<br>
+
+### Features
+
+- [x] Layout responsivo Desktop
+- [x] Layout responsivo iPad/Tablet
+- [x] Layout responsivo Mobile
+
+<br>
+
+## Protótipo
+
+![image](https://github.com/marcosprofile/jornada-milhas/assets/86635292/5e69a4ae-836b-4a06-b4f4-54bba0d996cf)
+
+## Frontend Desktop
+
+![image](https://github.com/marcosprofile/jornada-milhas/assets/86635292/fb2d7fef-8efc-4764-bffa-3e2999f633f9)
+
+## Frontend Mobile
+
+![image](https://github.com/marcosprofile/jornada-milhas/assets/86635292/b04539cc-7dae-4605-a1ba-bcf714166aae)
+
+<br>
+<br>
+<br>
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 16.1.4.
 
