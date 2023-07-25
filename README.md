@@ -16,7 +16,7 @@
 
 ## Frontend Desktop
 
-![image](https://github.com/marcosprofile/jornada-milhas/assets/86635292/fb2d7fef-8efc-4764-bffa-3e2999f633f9)
+![image](https://github.com/marcosprofile/jornada-milhas/assets/86635292/03c45022-870d-4878-b2ad-9e7a11e23e51)
 
 ## Frontend Mobile
 
