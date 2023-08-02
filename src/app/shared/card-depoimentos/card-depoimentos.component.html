@@ -1,8 +1,7 @@
 <mat-card>
-  <img src="assets/imagens/Avatar1.png" alt="Depoimento 1">
+  <img [src]="imagem" alt="Pessoa">
   <mat-card-content>
-    A Jornada foi uma das melhores agências de viagens que eu já experimentei.
-    O serviço ao cliente foi excepcional, e toda a equipe foi muito atenciosa e prestativa.
-    <mat-card-title>Lauro Matos</mat-card-title>
+    {{ depoimento }}
+    <mat-card-title>{{ nome }}</mat-card-title>
   </mat-card-content>
 </mat-card>

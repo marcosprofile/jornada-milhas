@@ -1,10 +1,10 @@
 <mat-card class="card-busca">
   <img mat-card-image
-    src="assets/imagens/Veneza.png" alt="Imagem de Veneza">
+    [src]="imagem" [alt]="cidade">
   <mat-card-content>
     <ul>
-      <li>Veneza</li>
-      <li>R$ 500</li>
+      <li>{{ cidade }}</li>
+      <li>{{ preco }}</li>
     </ul>
   </mat-card-content>
   <mat-card-actions>
