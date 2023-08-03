@@ -26,6 +26,8 @@ import { MatNativeDateModule } from '@angular/material/core';
 import { ModalComponent } from './shared/modal/modal.component';
 import { MatDialogModule } from '@angular/material/dialog';
 import { ModalHeaderComponent } from './shared/modal-header/modal-header.component';
+import { HttpClientModule } from '@angular/common/http';
+import { PromocoesComponent } from './pages/home/promocoes/promocoes.component';
 
 
 @NgModule({
@@ -41,7 +43,8 @@ import { ModalHeaderComponent } from './shared/modal-header/modal-header.compone
     CardDepoimentosComponent,
     FormBuscaComponent,
     ModalComponent,
-    ModalHeaderComponent
+    ModalHeaderComponent,
+    PromocoesComponent
   ],
   imports: [
     BrowserModule,
@@ -57,7 +60,8 @@ import { ModalHeaderComponent } from './shared/modal-header/modal-header.compone
     MatInputModule,
     MatDatepickerModule,
     MatNativeDateModule,
-    MatDialogModule
+    MatDialogModule,
+    HttpClientModule
   ],
   providers: [],
   bootstrap: [AppComponent]

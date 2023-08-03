@@ -6,12 +6,7 @@
   <app-form-busca></app-form-busca>
   <h2>Promoções</h2>
   <div class="card-wrapper">
-    <app-card-busca cidade="Atacama" preco="R$ 500" imagem="../../assets/imagens/Atacama.png"></app-card-busca>
-    <app-card-busca cidade="Veneza" preco="R$ 500" imagem="../../assets/imagens/Veneza.png"></app-card-busca>
-    <app-card-busca cidade="Patagonia" preco="R$ 500" imagem="../../assets/imagens/Patagonia.png"></app-card-busca>
-    <app-card-busca cidade="Grand Canyon" preco="R$ 500" imagem="../../assets/imagens/Grand_Canyon.png"></app-card-busca>
-    <app-card-busca cidade="Turquia" preco="R$ 500" imagem="../../assets/imagens/Turquia.png"></app-card-busca>
-    <app-card-busca cidade="Cordilheira dos Andes" preco="R$ 500" imagem="../../assets/imagens/Cordilheira_dos_Andes.png"></app-card-busca>
+    <app-card-busca *ngFor="let item of promocoes" [promocao]="item"></app-card-busca>
   </div>
   <h2>Depoimentos</h2>
   <div class="card-wrapper">
